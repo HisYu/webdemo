@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ego商城</title>
+    <link rel="shortcut icon" href="./imgs/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="./CSS/shouye.css">
+    <link href="./CSS/layui-v2.7.6/layui/css/layui.css" rel="stylesheet">
+</head>
+<body>
+<!-- 头部区域 -->
+<div class="box">
+    <div class="header">
+            <div class="logo">
+                <a href="">
+                    <img src="./imgs/logox.png" alt="">
+                </a>
+            </div>
+            <div class="nav">
+                <ul>
+                    <a href="./shouye.html">
+                        <li>首页</li>
+                    </a>
+                    <a href="./allproduct.html"> 
+                        <li>全部商品</li>
+                    </a>
+                    <a href="./shopping.html">
+                        <li>购物车</li>
+                    </a>
+                    <a href="./dizhi.html">
+                        <li>地址管理</li>
+                    </a>
+                    <a href="">
+                        <li>3D管理</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- 轮播区域 -->
+    <script src="./CSS/layui-v2.7.6/layui/layui.js"></script>
+    <div class="layui-carousel" id="ID-carousel-demo-image">
+        <div carousel-item>
+            <div><img src="imgs/lbt01.png"></div>
+            <div><img src="imgs/lbt02.png"></div>
+        </div>
+    </div>
+    <script>
+        layui.use(function () {
+            var carousel = layui.carousel;
+            // 渲染 - 图片轮播
+            carousel.render({
+                elem: '#ID-carousel-demo-image',
+                width: '1200px',
+                height: '450px',
+                interval: 3000
+            });
+        });
+    </script>
+
+<!-- 限时秒杀 -->
+    <div class="mioasha">
+        <div class="ms">
+            <div class="ms-top">
+                <div class="jp-img">
+                        <img src="imgs/jingpin.png" alt="">
+                        <h2 class="zi">精品推荐</h2>
+                </div>
+            <div class="ms-bottom">
+                <div class="ms-img">
+                    <img src="imgs/hot.png" alt="">
+                    <h2 class="zi">秒杀专区</h2>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+<!-- 积分攻略 -->
+<div class="integral">
+    <div class="integral-top">
+        <div class="jp-img">
+            <img src="imgs/score.png" alt="">
+            <h2 class="zi">积分攻略</h2>
+        </div>
+    </div>
+    <ul class="integral-bottom">
+        <li class="jifen1" style="background-image: url(imgs/integral-01.9386d4bf.png);">
+                <h3 class="jifenzi">签到得积分</h3>
+                <div class="kk">去签到</div>
+        </li>
+        <li class="jifen2" style="background-image: url(imgs/integral-02.150d92a1.png);">
+                <h3 class="jifenzi">购物赢积分</h3>
+                <div class="kk">去购物</div>
+        </li>
+        <li class="jifen3" style="background-image: url(imgs/integral-03.9870f3f1.png);">
+                <h3 class="jifenzi">推荐得积分</h3>
+                <div class="kk">去推荐</div>
+        </li>
+        <li class="jifen4" style="background-image: url(imgs/integral-04.afadcbdf.png);">
+                <h3 class="jifenzi">做任务得积分</h3>
+                <div class="kk">做任务</div>
+        </li>
+    </ul>
+</div>   
+
+    <!-- 脚部 -->
+<div class="foot">
+    <div class="footer">
+       <div class="footer-left">
+        <h2 class="footer-letf-1">
+            <img src="imgs/logox.png" alt="">
+        </h2>
+        <p class="footer-letf-2">
+            易购商城是国内知名B2C商城。其产品包括影像影音、手机通讯、电脑产品、办公设备、生活电器、汽车用品和日用百货等万种优质商品，是中国电子商务领域的电子商务网站之一 。
+            易购商城地处“中国四大古都”之一，有“六朝古都”之称的江苏省南京市易购商城是国内知名B2C商城。其产品包括影像影音、手机通讯、电脑产品、办公设备、 生活电器、汽车用品和日用百货等万种优质商品，
+            是中国电子商务领域的电子商务网站之一.
+        </p>
+       </div>
+       <ul class="footer-center">
+        <li class="footer-center-1">
+            <a href="">微信</a>
+        </li>
+        <li class="footer-center-2">
+            <a href="">新浪微博</a>
+        </li>
+        <li class="footer-center-3">
+            <a href="">联系我们</a>
+        </li>
+       </ul>
+       <div class="footer-right">
+        <p class="footer-right-1">全国免费咨询热线</p>
+        <h3 class="footer-right-2">020-85628002</h3>
+       </div>
+    </div>
+</div>
+</body>
+</html>

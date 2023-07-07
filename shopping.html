@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kowtow-dinglang-points-mall</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/shopping.css">
+    <script src="./js/text.js"></script>
+    <script src="./js/shopping.js"></script>
+    <style>
+         .bg {
+            background-color: rgba(231, 225, 214, 0.226);
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="wrap headerwrap">
+            <ul class="navBox">
+                <li><a href="./shouye.html">首页</a> </li>
+                <li><a href="allproduct.html" style="color: 242B39;"> 全部商品 </a></li>
+                <li style="color: #2a5df1;"><a href="shopping.html"> 购物车</a>  </li>
+                <li><a href="./dizhi.html"> 地址管理 </a> </li>
+                <li><a href="#"> 3D管理 </a> </li>
+            </ul>
+        </div>
+        <div class="cart">
+            <h4>全部商品</h4>
+            <div class="cart-main">
+                <div class="cart-th">
+                    <div class="cart-th1">全部</div>
+                    <div class="cart-th2">商品</div>
+                    <div class="cart-th3">单价（元）</div>
+                    <div class="cart-th4">数量</div>
+                    <div class="cart-th5">小计（元）</div>
+                    <div class="cart-th6">操作</div>
+                </div>
+            </div>
+            <div class="cart-body">
+                <ul class="cart-list">
+                    <li class="cart-list-con1">
+                        <input type="checkbox" name="chk_list" class="chk_list"  >
+                    </li>
+                    <li class="cart-list-con2">
+                        <img src="./imgs/1659924056805236737-1684591711493.png" alt="">
+                        <div class="item-msg">联想笔记本电脑 小新Air14 英特尔酷睿i5 14英寸轻薄本(i5 16G 512G 高色域 大电池)银 商务办公手提电脑</div>
+                    </li>
+                    <li class="cart-list-con3">
+                        <span style="font-size: 16px;" class='Price'>34.99</span>
+                    </li>
+                    <li class="cart-list-con4">
+                        <a href="javascript:void (0);" class="mins">-</a>
+                        <div class="amount">1</div>
+                        <a href="javascript:void (0);" class="plus">+</a>
+                    </li>
+                    <li class="cart-list-con5">
+                        <span class="sum" style="font-size: 16px;">34.99</span>
+                    </li>
+                    <li class="cart-list-con6">
+                        <a href="javascript:void (0);" style="color: #666;cursor:pointer;" class="delete">删除</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cart-tool">
+                <div class="select-all">
+                    <input type="checkbox" class="chooseAll">
+                    <span>全选</span>
+                </div>
+                <div class="money-box">
+                    <div class="chosed">
+                        已选择<span class="totalAmount">0</span>件商品
+                    </div>
+                    <div class="sumprice">
+                        <em style="font: inherit">总价（不含运费）:</em>
+                        <i class="summoney" style="font: inherit" >0</i>
+                    </div>
+                    <div class="sumbtn">
+                        <button class="sum-btn" style="display: block; position: relative; width: 96px; 
+                        height: 52px; line-height: 52px; color: rgb(255, 255, 255); text-align: center;
+                         font-size: 18px; background: rgb(225, 37, 27); overflow: hidden;">结算</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-b">
+            <ul class="heart wrap">
+                <li >
+                    <div class="footer-i">
+                        <img src="./imgs/logox.df5dd860.png" alt="">
+                        <p > 易购商城是国内知名B2C商城。其产品包括影像影音、
+                            手机通讯、电脑产品、办公设备、生活电器、汽车用品
+                            和日用百货等万种优质商品，是中国电子商务领域的电子商务网站之一 。 
+                            易购商城地处“中国四大古都”之一，有“六朝古都”之称的江苏省南京市易购
+                            商城是国内知名B2C商城。其产品包括影像影音、手机通讯、电脑产品、办公设
+                            备、 生活电器、汽车用品和日用百货等万种优质商品，是中国电子商务领域的
+                            电子商务网站之一. </p>
+                    </div>
+                </li>
+                <li class="one">
+                    <ul> 
+                        <li>
+                            <img src="./imgs/weixin.jpg" alt="">
+                            <a href="#">微信</a>
+                        </li>
+                        <li>
+                        <a href="">新浪微博</a>
+                        </li>
+                        <li>
+                            <img src="./imgs/0c13b51d86daaa4b6931df9d627f7ae9_1.jpg" alt="">
+                            <a href="">联系我们</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="footer-r">
+                        <p>全国免费咨询热线</p>
+                        <h3>020-85628002</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+var cartBody = document.querySelector(".cart-body");
+var checkAlls = document.querySelector('.cart-tool .select-all .chooseAll');//获取所有全选框
+var items = document.getElementsByClassName('cart-list');//选中后得改变框 .cart-body .
+var checkItems = document.getElementsByClassName('chk_list');//商品前得按钮
+var amounts = document.getElementsByClassName('amount');//商品个数 .cart-body .cart-list .cart-list-con4 .
+var totalAmount = document.querySelector('.cart-tool .money-box .totalAmount');//选择几件
+var total = document.querySelector('.cart-tool .sumprice .summoney');//总价
+var totalPrice = 0
+var index = 0
+var perPrice = document.getElementsByClassName('Price');//单价
+var sumPrice = document.getElementsByClassName('sum');//小计
+//获取用户id
+var id = sessionStorage.getItem('user')
+if(id == null){
+    alert("请先登录")
+    location.replace("./login.html");
+}
+//获取用户id购物车
+ajax({
+    type:'get',
+    url:'/shopCar/getShopCarByUserId/'+ id,
+    data:{
+    },
+    success(data){
+        let rout=data.data
+        renderData(rout)
+        
+         //删除单件商品
+        var deletebtns = document.getElementsByClassName('delete')//删除
+        for(let i = 0; i < checkItems.length;i++){
+            deletebtns[i].onclick = function() {
+            ajax({
+                type: 'delete',
+                url:'/shopCar/delShopCar/'+ rout[i].id,
+                data:{
+                    shopCarId:rout[i].id
+                },
+                success(data){
+                    if(data.msg === "success"){
+                        items[i].remove();
+                        getTotal()
+                    getGoodsNum()
+                    }
+                }
+            })
+         }
+        }
+        //减少商品数量功能
+        var leftbtns = document.getElementsByClassName('mins')//减少
+        for(let i = 0; i < checkItems.length;i++){
+        leftbtns[i].onclick = function() {
+            if(amounts[i].innerHTML != 1){
+            ajax({
+                type: 'put',
+                url:'/shopCar/minusShopCarNum/'+ rout[i].id,
+                data:{
+                    shopCarId:rout[i].id
+                },
+                success(data){
+                    if(data.msg === "success"){
+                        amounts[i].innerHTML--;
+                        get()
+                        getTotal()
+                    getGoodsNum()
+                    }
+
+                }
+            })
+            }else{
+            alert("最少为一件")
+                }
+         }
+        }
+         //增加商品数量功能
+         var rightbtns = document.getElementsByClassName('plus')//增加
+        for(let i = 0; i < checkItems.length;i++){
+        rightbtns[i].onclick = function() {
+            ajax({
+                type: 'put',
+                url:'/shopCar/addShopCarNum/'+ rout[i].id,
+                data:{
+                    shopCarId:rout[i].id
+                },
+                success(data){
+                    if(data.msg === "success"){
+                        amounts[i].innerHTML++;
+                        get()
+                        getTotal()
+                        getGoodsNum()
+                    }
+                },
+            })
+            }
+         }
+        // 全选和单选按钮
+        var cont = 0
+        for(let i = 0; i < checkItems.length ; i++){
+            checkItems[i].onclick = function() {
+                if(checkItems[i].checked === true) {
+                   cont++;
+                items[i].classList.add('bg');   
+         }else{
+            cont--;
+            items[i].classList.remove('bg');
+        }
+            getTotal()
+            getGoodsNum()
+        if(cont === checkItems.length){
+            checkAlls.checked=true
+        }else{
+            checkAlls.checked=false
+        }
+            } 
+        }
+    checkAlls.onclick = function(){
+        if(checkAlls.checked === true){
+            checkAlls.checked=true
+            cont  = checkItems.length;
+            for(let i = 0 ; i < checkItems.length ; i++){
+                checkItems[i].checked = true
+                items[i].classList.add('bg');
+            }
+        getTotal()
+        getGoodsNum()
+        }else{
+            checkAlls.checked=false
+            cont = 0
+            for(let i = 0 ; i < checkItems.length ; i++){
+                checkItems[i].checked = false
+                items[i].classList.remove('bg');
+            }
+        totalAmount.innerText=0;
+        total.innerText = 0;
+     }
+    }
+}
+})  
+
+ // 计算小计
+    function get(){
+    for (var i = 0; i < checkItems.length; i++){//data.length
+        var Price =(perPrice[i].innerHTML) * (amounts[i].innerHTML)
+        sumPrice[i].innerText = Price;
+    }
+}  
+
+ //计算总价
+ function getTotal(){
+        var totalPrice = 0;
+        for (var i = 0; i < checkItems.length; i++) {
+            if (checkItems[i].checked=== true) {
+                totalPrice +=parseFloat(sumPrice[i].innerHTML) 
+            }
+        }
+        total.innerText = totalPrice;   
+}
+
+// 计算商品总数
+function getGoodsNum() {
+        var flag = false;
+        var totalQuantity = 0;
+        for (var i = 0; i < checkItems.length; i++) {
+            if (checkItems[i].checked === true) {
+                totalQuantity +=parseInt(amounts[i].innerHTML);
+                flag = true;
+            }
+        }
+        totalAmount.innerText = totalQuantity;
+    }
+//获取订单数量    
+function renderData(rout) {
+        var str = "";
+        for (var i = 0; i < rout.length; i++) {
+            str += "<ul class='cart-list'><li class='cart-list-con1'>"+
+                    "<input type='checkbox' name='chk_list' class='chk_list'  >"+
+                    "</li>"+
+                    "<li class='cart-list-con2'>"+
+                        "<img src='" + rout[i].goodInfo.goodPic +"'>"+
+                        "<div class='item-msg'>" + rout[i].goodInfo.goodName + "</div>"+
+                        "</li>"+
+                        "<li class='cart-list-con3'>"+
+                    "<span style='font-size: 16px;' class='Price'>"+ rout[i].goodInfo.price +"</span>"+
+                    "</li>"+
+                    "<li class='cart-list-con4'>"+
+                 "   <a href='javascript:void (0);' class='mins'>-</a>"+
+                   " <div class='amount'>"+ rout[i].num+"</div>"+
+                   " <a href='javascript:void (0);' class='plus'>+</a>"+
+                "</li>"+
+               " <li class='cart-list-con5'>"+
+                   " <span class='sum' style='font-size: 16px;'>"+
+                     (rout[i].goodInfo.price * rout[i].num)  
+                     +"</span>"+
+                "</li>"+
+               " <li class='cart-list-con6'>"+
+                    "<a href='javascript:void (0);' style='color: #666;cursor:pointer;' class='delete'>删除</a>"+
+             "   </li>"+
+           " </ul>"
+               }
+        cartBody.innerHTML = str;
+    }
+</script>
+</html>

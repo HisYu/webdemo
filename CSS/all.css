@@ -1,0 +1,192 @@
+.details {
+ height: 813px;
+}
+.details .left{
+    float: left;
+    width: 884px;
+    height: 704px;
+    
+   }
+   .details .left>div{
+    float: left;
+   }
+   .details .left .leftone{
+    width: 459px;
+    height: 704px;
+   }
+   .details .left .lefttwo{
+    width: 425px;
+    height: 704px;
+   }
+   .details .left .leftone .bigImg{
+    width: 459px;
+    height: 400px;
+    margin-bottom: 21px;
+   }
+   .details .left .lefttwo .top{
+        height:188px;
+        width: 368px;
+        margin: 7px 26px 0px 31px;
+        padding-bottom: 23px;
+        border-bottom: 1px solid #ececec;
+   }
+   .details .left .lefttwo .top h2{
+    font-size: 28px;
+    color: #000;
+    margin-bottom: 15px;
+   }
+
+   .details .left .lefttwo .top .score{
+    float: left;
+    height: 37px;
+    width: 93px;
+    font-size: 28px;
+    color: #fd604d;
+   }
+   .details .left .lefttwo .down{
+        height:234px;
+        width:368px;
+        padding-top: 19px;
+        margin: 0px 26px 0px 31px;
+      
+   }
+   .details .left .lefttwo .down .quantity{
+    width: 368px;
+    height: 65px;
+    margin: 10px 0;
+
+   }
+   .details .left .lefttwo .down .quantity span{
+    color: #666;
+    font-size: 14px;
+   }
+   .details .left .lefttwo .down .quantity strong{
+    font-weight: 300;
+    color: #000;
+    margin-bottom: 14px;
+    display: block
+   }
+   .details .left .lefttwo .down .step{
+    background: #fff;
+    width: 106px;
+    margin-bottom: 24px;
+    height: 32px;
+   }
+   .details .left .lefttwo .down .step>div{
+    float: left;
+    width: 30px;
+    text-align: center;
+    line-height: 32px;
+    height: 32px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+
+   }
+   .details .left .lefttwo .down .step>input{
+    width: 46px;
+    height: 32px;
+    border: 0;
+    text-align: center;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    padding: 0;
+    border-bottom: 1px solid #ccc;
+   }
+   .details .left .lefttwo .down .step .add{
+    float: right;
+   }
+   .details .left .lefttwo .down .btns{
+    margin-bottom: 25px;
+    width: 368;
+    height: 46px;
+
+   }
+   .details .left .lefttwo .down .btns>div{
+    float: left;
+    width: 150px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    margin-right: 19px;
+    cursor: pointer;
+    color: #fff;
+   }
+
+  
+   .details .right{
+    float: left;
+    width: 260px;
+    height: 704px;
+    padding-left: 19px;
+    border-left: 1px solid #ddd;
+   
+   }
+   .details .right h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+   }
+   .details .right ul{
+    width: 240;
+    height: 630px;
+   }
+   .details .right ul li{
+    width: 240px;
+    height: 80px;
+    margin-bottom: 30px;
+   }
+   .details .right ul li .r{
+    float: left;
+   }
+   .details .right ul li .l{
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+   }
+   .details .right ul li .l img{
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+   }
+   .details .right ul li .r .title{
+    text-overflow: ellipsis;
+    width: 140px;
+    height: 18px;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+   }
+   .details .right ul li .r .score{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #ff5e0f;
+   }
+   .details .bottomton{
+    float: left;
+    margin-top: 52px;
+    width: 1200px;
+    height: 40px;
+    border-bottom: 1px solid #e4e7ed;
+   }
+   .details .bottomton .xuanzhe{
+    width: 451px;
+    height: 40px;
+   }
+   .details .bottomton .xuanzhe div{
+    float: left;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: #303133;
+    border: 1px solid #e4e7ed;
+   }
+

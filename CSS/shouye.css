@@ -1,0 +1,224 @@
+/* 头部区域开始 */
+.box{
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fff;
+}
+.header {
+    height: 105px;
+}
+.header .logo{
+    float: left;
+    left: auto;
+    width: 180px;
+    height: 63px;
+    margin-top: 21px;
+}
+.header .logo img{
+    width: 100%;
+}
+.header .nav{
+    float: left;
+    width: 946px;
+    height: 30px;
+    margin-top: 30px;
+    margin: 37px 0 38px 50px;
+}
+.header .nav li{
+    float: left;
+    height: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    padding: 0 64px;
+}
+.header ul a:first-child li {
+    color: #fc475d;
+}
+/* 头部区域结束 */
+/* 轮播区域开始 */
+.layui-carousel {
+    height: 100%;
+    margin-left: 192px;
+}
+
+.layui-carousel img {
+    width: 100%;
+}
+/* 轮播区域结束 */
+/* 秒杀区域开始 */
+.ms{
+    width: 1200px;
+    height: 250px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    margin-left: 192px;
+}
+.ms-top{
+    width: 1200px;
+    height: 109.5px;
+    border-left: 15px solid #fff;
+    border-right: 15px solid #fff;
+}
+.ms-bottom{
+    width: 1200px;
+    height: 109.5px;
+}
+.jp-img ,.ms-img {
+    width: 171px;
+    height: 39.5px;
+    margin-left: 20px;
+    padding: 50px 0px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #242b39;
+}
+.zi{
+    margin-left: 10px;
+    font-family: SourceHanSansSC;
+    font-weight: 700;
+}
+
+/* 限时秒杀区域结束 */
+/* 积分攻略区域开始 */
+.integral{
+    margin: 0 auto;
+    width: 1200px;
+    height: 310px;
+}
+.integral-top{
+    width: 171px;
+    height: 39.5px;
+    padding: 20px 0px 20px;
+    margin-left: 20px;
+}
+.integral-bottom{
+    width: 1200px;
+    height: 198px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+.integral-bottom li {
+    float: left;
+}
+.integral-bottom li:hover {
+    opacity: 0.7;
+}
+.integral-bottom .jifen1, .jifen2, .jifen3 {
+    width: 285px;
+    height: 168px;
+    margin-right: 20px;
+}
+.jifen4{
+    width: 285px;
+    height: 168px;
+}
+.kk{
+    color: #fff;
+    margin-left: 19px;
+    width: 96px;
+    height: 27px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 27px;
+}
+.jifenzi{
+    margin-left: 19px;
+    padding: 0px 0px 19px;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+/* 积分攻略区域结束 */
+/* 脚部区域开始 */
+.foot {
+    margin-top: 40px;
+    width: 100%;
+    height: 240px;
+    background: #fff;
+    color: #000;
+    border-top: 1px solid;
+}
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+    height: 174px;
+}
+.footer-left{
+    float: left;
+    width: 426px;
+    height: 174px;
+}
+.footer-left-1{
+    width: 426px;
+    height: 60px;
+}
+.footer-left p{
+    width: 426px;
+    height: 55px;
+    padding-top: 27px;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #7d879a;
+}
+.footer-left img{
+    padding-top: 32px;
+    width: 200px;
+    height: 56px;
+}
+.footer-center{
+    padding-top: 123px;
+    margin-left: 500px;
+    width: 293px;
+    height: 51px;
+}
+.footer-center ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-center li{
+    padding-left: 30px;
+    display: inline-block;
+}
+.footer-center a{
+    font-size: 16px;
+    color: #7d879a;
+}
+.footer-center-1, .footer-center-2{
+    padding-right: 16px;
+    border-right: 1px solid#6c6c6c
+}
+.footer-right{
+    float: right;
+    position: relative;
+    top: -174px;
+    width: 220px;
+    height: 174px;
+}
+.footer-right p{
+    width: 117px;
+    height: 14px;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #7d879a;
+    padding-top: 90px;
+}
+.footer-right h3{
+        margin-top: 10px;
+        width: 220px;
+        height: 22px;
+        font-size: 28px;
+        font-family: SourceHanSansSC;
+        font-weight: 700;
+        color: #000
+}
+/* 脚部区域结束 */
+
+
+

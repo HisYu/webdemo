@@ -1,0 +1,267 @@
+.home .banner{
+    padding-bottom: 30px;
+}
+.home .banner .block{
+    height: 450px;
+    position:relative;
+    background-color: aqua;
+}
+.home .banner .block .slider .sliderqt img{
+    height: 450px;
+    width: 1200px;
+}
+.home .banner .block .slider .sliderqt {
+    position: absolute;
+    opacity: 0;
+    height: 450px;
+    width: 1200px;
+    /* transition: all 1s; */
+}
+.home .banner .block .slider .sliderqt.active{
+    opacity: 1;
+}
+
+
+.home .banner .slidert {
+    height: 32px;
+    width: 70px;
+	position: absolute;
+	bottom: 10%;
+	right: 5%;
+}
+.home .banner .slidert .slidertop{
+    float: left;
+    width: 20px;
+	height: 20px;
+	border-radius: 15px;
+	border: 2px solid white;
+	background-color: rgba(0,0,0,0.4);
+	margin: 5px;
+}
+.home .banner .slidert .slidertop.white{
+	background-color: #FFFFFF;
+}
+.home .banner .sliderleft {
+    width:36px;
+	height: 69px;
+	font-size: 30px;
+	color: white;
+	background-color:rgba(0,0,0,0.4);
+	line-height: 69px;
+	padding-left:5px;
+	z-index: 10;/*始终显示在图片的上层*/
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-60%);/*使按钮向上偏移居中对齐*/
+	cursor: pointer;
+	opacity: 0;/*平时隐藏*/
+}
+.home .banner .sliderleft.out{
+    opacity: 1;
+}
+.home .banner .sliderright {
+    width:36px;
+	height: 69px;
+	font-size: 30px;
+	color: white;
+	background-color:rgba(0,0,0,0.4);
+	line-height: 69px;
+	padding-left:5px;
+	z-index: 10;/*始终显示在图片的上层*/
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-60%);/*使按钮向上偏移居中对齐*/
+	cursor: pointer;
+	opacity: 0;/*平时隐藏*/
+}
+.home .banner .sliderright.out{
+    opacity: 1;
+}
+
+.content{
+    padding-bottom: 30px;
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #000;     
+}
+
+.wrap .title{
+        padding-top: 50px;
+        padding-bottom: 20px;
+        font-size: 30px;
+        color: #242b39;
+        margin-left: 20px;
+        font-weight: 700;   
+}
+ .wrap .title span{
+    margin-left: 10px;
+}
+.wrap .title img{
+    vertical-align: middle;
+}
+.wrap .jifen{
+    padding-bottom: 30px;
+}
+.wrap .jifen li{
+    float: left;
+    width: 285px;
+    height: 168px;
+    color: #fff;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    /* transition: background-size .4s linear; */
+    background-size: 100% 100%;
+}
+
+.jifen {
+    height: 168px;
+    width: 100%;
+}
+.jifen li{
+    float: left;
+    margin-right: 15px;
+}
+.jifen li h3{
+    font-size: 24px;
+    margin-bottom: 19px;
+    
+}
+.jifen li div {
+    width: 96px;
+    height: 27px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 27px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .banner {
+
+   
+    padding-bottom: 30px;
+}
+
+.banner .block{
+    background-color: aqua;
+    position:relative;
+    height: 450px;
+}
+.banner .block .sliderlist .sliderdot{
+    float: left;
+    opacity: 0;
+}
+.banner .block .sliderlist .sliderdot{
+    float: left;
+    opacity: 0;
+}
+.banner .block .sliderlist img{
+    width: 100%;
+    heig: 100%;
+} */
+
+
+
+
+
+
+
+/* .content {
+    padding-bottom: 30px;
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #000;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.title .l{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: SourceHanSansSC;
+    font-weight: 700;
+    color: #242b39;   
+}
+.title .l h2 {
+    margin-left: 10px;
+}
+.list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.jifen li{
+    width: 285px;
+    height: 168px;
+    float: left;
+    margin-right: 15px;
+    padding-bottom: 30px;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    transition: background-size .4s linear;
+    background-size: 100% 100%;
+}
+
+.jifen li h3{
+    font-size: 24px;
+    margin-bottom: 19px;
+}
+.jifen li div {
+    width: 96px;
+    height: 27px;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 27px;
+} */

@@ -1,0 +1,133 @@
+html,head,body,p,a,h1,div,ul,li{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+body{
+    text-align: left;
+    background: #fff;
+    color: #000;
+}
+/* 首部开始 */
+.wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+.headerwrap{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrap .navBox {
+    display: flex;
+    width: 502px;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: SourceHanSansSC;
+    font-weight: 500;
+    color: #242b39;
+    line-height: 23px;
+}
+.wrap .navBox a{
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+.wrap .navBox li{
+    cursor: pointer;
+}
+/* 首部结束 */
+
+/* 尾部开始 */
+.footer-b{
+    width: 100%;
+    height: 240px;
+    background: #fff;
+    border-top: 1px solid;
+}
+.footer-b .heart>li{
+    float: left;
+    color: #7d879a;
+}
+.footer-b .heart .one{
+    margin:0 130px 0 130px; 
+}
+
+.footer-b .heart .footer-i{
+    padding-top: 32px;
+}
+.footer-b .heart .footer-i img{
+    width: 200px;
+    height: 56px;
+}
+.footer-b .heart .footer-i p{
+    padding-top: 27px;
+    width: 426px;
+    height: 55px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.6em;
+}
+.footer-b .heart .one ul{
+    margin-top: 123px;
+    width: 293px;
+    height: 50px;
+}
+.footer-b .heart .one ul  li{
+    float: left;
+    position: relative;
+}
+.footer-b .heart .one ul  li a{
+    color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+.footer-b .heart .one ul li img{
+    position: absolute;
+    left: -20%;
+    top: -110px;
+    width: 100px;
+    height: 100px;
+    display: none;
+}
+.footer-b .heart .one ul li:hover img{
+    display: block;
+}
+
+.footer-b .heart .one ul li a{
+    margin-right: 40px;
+    border-right: 1px solid #9e9e9e;
+    height: 20px;
+    padding-right: 16px;
+}
+.footer-b .heart .one ul li:last-child a{
+    border-right:none;
+    margin-right:0;
+}
+.footer-b .heart li:nth-child(3) .footer-r{
+    padding-top: 90px;
+}
+.footer-b .heart li:nth-child(3) .footer-r p {
+    width: 117px;
+    height: 14px;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #7d879a;
+}
+.footer-b .heart li:nth-child(3) .footer-r h3{
+    margin-top: 10px;
+    width: 220px;
+    height: 22px;
+    font-size: 28px;
+    font-family: SourceHanSansSC;
+    font-weight: 700;
+    color: #000;
+}
+/* 尾部结束 */

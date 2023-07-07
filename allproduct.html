@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/allproduct.css">
+    <script src="./js/text.js"></script>
+    <link rel="stylesheet" href="./CSS/layui-v2.7.6/layui/css/layui.css">
+    <script src="./CSS/layui-v2.7.6/layui/layui.js"></script>
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="wrap headerwrap">
+            <ul class="navBox">
+                <li><a href="./shouye.html">首页</a> </li>
+                <li style="color: #2a5df1;"><a href="allproduct.html"> 全部商品 </a></li>
+                <li><a href="shopping.html"> 购物车</a> </li>
+                <li><a href="./dizhi.html"> 地址管理 </a> </li>
+                <li><a href="#"> 3D管理 </a> </li>
+            </ul>
+        </div>
+        <div class="good">
+            <div class="wrap">
+                <img src="./imgs/banner.4c6b6225.png" alt="">
+                <ul class="options">
+                    <li class="ulone">
+                        <strong>分类：</strong>
+                        <span>全部</span>
+                        <span class="active">手机</span>
+                        <span>笔记本电脑</span>
+                        <span>衣服</span>
+                        <span>裤子</span>
+                        <span>帽子</span>
+                    </li>
+                    <li class="ultwo">
+                        <strong>子分类:</strong>
+                        <span>小米</span>
+                        <span>11111</span>
+                        <span>Apple</span>
+                        <span>ROG</span>
+                        <span>74444</span>
+                    </li>
+                </ul>
+                <ul class="list">
+                    <li>
+
+                    <li>
+
+                    <li>
+
+                    <li>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="ione" style=" text-align: center;">
+                    <div id="demo-laypage-normal-1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-b">
+            <ul class="heart wrap">
+                <li>
+                    <div class="footer-i">
+                        <img src="./imgs/logox.df5dd860.png" alt="">
+                        <p> 易购商城是国内知名B2C商城。其产品包括影像影音、
+                            手机通讯、电脑产品、办公设备、生活电器、汽车用品
+                            和日用百货等万种优质商品，是中国电子商务领域的电子商务网站之一 。
+                            易购商城地处“中国四大古都”之一，有“六朝古都”之称的江苏省南京市易购
+                            商城是国内知名B2C商城。其产品包括影像影音、手机通讯、电脑产品、办公设
+                            备、 生活电器、汽车用品和日用百货等万种优质商品，是中国电子商务领域的
+                            电子商务网站之一. </p>
+                    </div>
+                </li>
+                <li class="one">
+                    <ul>
+                        <li>
+                            <img src="./imgs/weixin.jpg" alt="">
+                            <a href="#">微信</a>
+                        </li>
+                        <li>
+                            <a href="">新浪微博</a>
+                        </li>
+                        <li>
+                            <img src="./imgs/0c13b51d86daaa4b6931df9d627f7ae9_1.jpg" alt="">
+                            <a href="">联系我们</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="footer-r">
+                        <p>全国免费咨询热线</p>
+                        <h3>020-85628002</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+    var imgs = document.querySelectorAll('.good .wrap .list .one .one-img')//商品照片
+    var perice = document.querySelectorAll('.good .wrap .list  .one .bottom-box p')//商品价格
+    var title = document.querySelectorAll('.good .wrap .list .one .bottom-box .introduce')//商品介绍
+    var buy = document.getElementsByClassName('btn')//立即购买 //.good .wrap .list li .one .bottom-box .
+    var input = document.querySelectorAll('.good .wrap .list li')//商品展示
+    var sort =document.querySelector('.good .wrap .options .ultwo')//获取子分类
+    var subcation = document.querySelectorAll('.good .wrap .options .ulone span')//获取分类
+        for(let i = 0 ; i < subcation.length; i++){
+            subcation[i].onclick = function(){
+                updata()
+                subcation[i].className = "active"
+                sort.innerHTML = putonet(i)
+                 
+            }
+          
+        }
+        function updata(){
+        for(let i = 0 ; i < subcation.length; i++){
+            subcation[i].className = ""
+        }
+    }
+
+    function putonet(n){
+      
+        var stu =  "<strong>子分类:</strong>"
+        switch(n){
+        case 1: stu +="<span>小米</span><span>11111</span><span>Apple</span><span>ROG</span><span>74444</span>"; break;
+        case 2: stu +="<span>拯救者</span><span>外星人</span><span>ROG</span><span>88</span>"; break;
+        case 3: stu +="<span>10</span>"; break;
+        case 4: stu +="<span>上衣</span><span>xx</span>"; break;
+    }
+        return stu;
+    }
+        ajax({ //获取到
+            type: 'get',
+            url: '/good/getAllGoods/0/4',
+            data: {
+            },
+            success(data) {
+                console.log(data.data.records);
+                putpage(data.data.total);
+            }
+        })
+    function getpage(rout) {
+        for (var i = 0; i < 4; i++) {
+            input[i].innerHTML = ""
+        }
+        for (var i = 0; i < rout.length; i++) {
+            input[i].innerHTML = "<div class='one'>" +
+                "<img src=" + rout[i].goodPic + " class='one-img'>" +
+                "<div class='bottom-box'>" +
+                " <div style='margin-top: 30px;' class='introduce'>" + rout[i].goodName + " </div>" +
+                "<p>$" + rout[i].price + "</p>" +
+                " <div class='btn'>立即购买</div>" +
+                " <img src='./imgs/section_new.png' class='flag'>" +
+                "</div>" +
+                "</div>"
+        }
+    }
+    function putpage(total) {
+        layui.use(function () {
+            var laypage = layui.laypage;
+            laypage.render({
+                elem: 'demo-laypage-normal-1',
+                count: total,// 数据总数
+                limit: 4,//每页显示的条数
+                jump: function (obj, first) {
+                    // console.log(obj.curr);
+                    ajax({
+                        type: 'get',
+                        url: '/good/getAllGoods/' + obj.curr + '/4',
+                        data: {},
+                        success(data) {
+                            rout = data.data.records
+                            getpage(rout)
+                            for (let i = 0; i < buy.length; i++) {
+                                buy[i].onclick = function () {
+                                    location.href = "all.html?n=" + obj.curr/*页数*/ + "&j=" + i/*当前页第几个商品*/
+                                }
+                            }
+                        }
+                    })
+                }
+            });
+        })
+    }
+</script>
+</html>

@@ -1,0 +1,221 @@
+.w {
+    width: 1200px;
+    height: auto;
+}
+
+/* header */
+.headerwrap {
+    width: 1200px;
+    height: 100px;
+}
+
+.headerwrap .nav {
+    list-style-type: none;
+    margin: 0 75px;
+    padding: 40px;
+}
+
+.headerwrap ul li {
+    display: inline;
+    padding: 25px;
+}
+
+/* login  */
+.loginwrap {
+    background-color: #e93854;
+    width: 1464.8px;
+    height: 607px;
+}
+
+.loginwrap .loginbg {
+    width: 1200px;
+    height: 607px;
+    margin: 0 auto;
+    background: url(../imgs/loginbg.b44ab5c6.png) no-repeat;
+    background-size: 100%;
+    padding: 0 132.4px;
+}
+
+.loginwrap .loginform {
+    width: 420px;
+    height: 406px;
+    box-sizing: border-box;
+    background: #fff;
+    float: right;
+    top: 90px;
+    position: relative;
+    padding: 20px;
+}
+
+.loginwrap .loginform .login {
+    width: 380px;
+    height: 346px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-top-color: #28a3ef;
+    padding-top: 12px;
+}
+
+.loginwrap .loginform .login .tab {
+    width: 380px;
+    height: 50px;
+    text-align: center;
+}
+
+.loginwrap .loginform .login .tab a {
+    color: #e1251b;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.loginwrap .loginform .login .in span {
+    float: left;
+    width: 37px;
+    height: 32px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.loginwrap .loginform .login .in input {
+    width: 285px;
+    height: 32px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-left: none;
+    float: left;
+    outline: none;
+}
+
+.else {
+    width: 365px;
+    height: 20px;
+    text-align: center;
+}
+
+.else .autologin {
+    margin: 3px 163px 3px 4px;
+}
+
+.forget {
+    float: right;
+    width: 80px;
+    height: 18px;
+}
+
+.button {
+    width: 328px;
+    height: 22.4px;
+}
+
+.logingo {
+    margin-top: 20px;
+    width: 370px;
+    height: 39px;
+    float: left;
+}
+
+.enterlogin {
+    background-color: rgb(225, 37, 27);
+    font-size: 16px;
+    font-family: 微软雅黑;
+    word-spacing: 4px;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 36px;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 0px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(225, 37, 27);
+    border-image: initial;
+    outline: none;
+}
+
+.logingo a {
+    float: right;
+    font-size: 15px;
+    line-height: 38px;
+    font-family: 微软雅黑;
+}
+
+.footer {
+    width: 1200px;
+    height: 240px;
+    background: #fff;
+    margin-left: 100px;
+}
+
+.footer .p p {
+    padding-top: 27px;
+    width: 426px;
+    height: 55px;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #7d879a;
+}
+
+.footer .footertop {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footertop ul {
+    width: 314px;
+    height: 51px;
+}
+
+.footer .text-hover {
+    width: 65px;
+    height: 100px;
+}
+
+/*设置图片自适应及不显示的样式*/
+.footer .img-hover {
+    width: 100%;
+    height: aotu;
+    display: none;
+}
+
+/*设置鼠标滑过h2标签的文字时显示图片*/
+.footer a:hover+.img-hover {
+    display: block;
+}
+
+.dd{
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 314px;
+    justify-content: space-between;
+}
+.dd a{
+    color: #7d879a;
+}
+
+.wb{
+    padding-left: 30px;
+    padding-right: 15px;
+    border-left: 1px solid #7d879a;
+    border-right:1px solid #7d879a; ;
+}
+.ph{
+    padding-left: 10px;
+}
+
+.take{
+    margin: 80px 50px;
+    
+    font-size: larger;
+}
+.up{
+    color: #fff;
+    background-color: #409eff;
+    border-color: #409eff;
+    font-size: 12px;
+    padding: 9px 15px;
+    border: none;
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer"/>
+    <link rel="icon" href="./images/favicon .ico">
+    <link rel="stylesheet" href="./css/dizhi.css">
+    <title>kowtow-dinglang-points-mall</title>
+</head>
+<body>
+  <!-- 1.新增收货地址按钮 -->
+   <div class="headerwrap">
+        <div class="navbox">
+            <ul>
+                <li><a href="./shouye.html">首页</a></li>
+                <li><a href="./allproduct.html">全部商品</a></li>
+                <li><a href="./shopping.html">购物车</a></li>
+                <li><a href="./dizhi.html">地址管理</a></li>
+                <li>3D管理</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="address">
+        <div class="add-address">
+            <button class="add-address-btn">新增收货地址</button>
+        </div>
+    </div>
+
+    <div class="list"></div>
+    <div class="footer">
+      <div class="heart warp">
+          <div class="footer-i">
+              <h2 style=" margin-top: 0px;margin-bottom: 0px;">
+                  <a href="">
+                      <img src="./imgs/logox.png" alt=""style="height: 56px; width: 200px;">
+                  </a>
+              </h2>
+              <p style="line-height: 1.6em;">易购商城是国内知名B2C商城。其产品包括影像影音、手机通讯、电脑产品、办公设备、生活电器、汽车用品和日用百货等万种优质商品，是中国电子商务领域的电子商务网站之一 。 易购商城地处“中国四大古都”之一，有“六朝古都”之称的江苏省南京市易购商城是国内知名B2C商城。其产品包括影像影音、手机通讯、电脑产品、办公设备、 生活电器、汽车用品和日用百货等万种优质商品，是中国电子商务领域的电子商务网站之一.</p>
+          </div>
+          <ul>
+              <li>
+                  <a href="" class="wechat">微信</a>
+                  <img style="display: none" src="./imgs/8f2ab9e5e05db6224c27fee2fe3307c.jpg">
+              </li>
+              <li>
+                  <a href="javascript">新浪微博</a>
+              </li>
+              <li>
+                  <a href="" class="connect">联系我们</a>
+                  <img style="display: none" src="./imgs/0c13b51d86daaa4b6931df9d627f7ae9_1.jpg">
+              </li>
+          </ul>
+          <div class="footer-r">
+              <p style="margin-top: 0px;margin-bottom: 0px;">全国免费咨询热线</p>
+              <h3 style=" margin-bottom: 0px;">3020-85628002</h3>
+          </div>
+      </div>
+  </div>
+  
+    <!-- 2.新增地址 -->
+    <div class="address-form-wrapper">
+      <div class="address-form">
+          <a>新增地址</a>
+          <button id="cancel-btn" class="cancel-btn">x</button>
+          <form>
+            <table style = "border-collapse:separate; border-spacing:25px;">
+              <tr>
+                <td class="id">用户ID</td>
+                <td>
+                  <input type="text" class="inner" id="user-id" value="1641422970775683073" readonly>
+                </td>
+              </tr>
+              <tr>
+                <td class="ssq">省市区联动<span class="required"></span></td>
+                <td>
+                  <select class="province">
+                    <option>请选择省级</option>
+                    <option value="广东省">广东省</option>
+                    <option value="江苏省">江苏省</option>
+                  </select>
+                  <select  class="city">
+                    <option>请选择市级</option>
+                    <option value="广州市">广州市</option>
+                    <option value="深圳市">深圳市</option>
+                    <option value="南京市">南京市</option>
+                    <option value="苏州市">苏州市</option>
+                  </select>
+                  <select class="district">
+                    <option >请选择区级</option>
+                    <option value="海珠区">海珠区</option>
+                    <option value="天河区">天河区</option>
+                    <option value="福田区">福田区</option>
+                    <option value="南京市鼓楼区">南京市鼓楼区</option>
+                    <option value="吴中区">吴中区</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="detail-address">详细地址<span class="required"></span></td>
+                <td>
+                  <input type="text" placeholder="请输入地址" class="detail-addresstext">
+                </td>
+              </tr>
+                <tr>
+                  <td class="name">姓名<span class="required"></span></td>
+                  <td>
+                    <input type="text" placeholder="请输入姓名" class="nametext">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="gender">性别</td>
+                  <td style="color: #606266">
+                     <input type="radio" name="gender" value="1"><label for="nan">男</label>
+                     <input type="radio" name="gender" value="0"><label for="nv">女</label>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="phone">电话号码<span class="required"></span></td>
+                  <td>
+                    <input type="text" placeholder="请输入电话号码" class="phonetext">
+                  </td>
+                </tr>
+                <tr>
+                  <td class="is-default">默认地址<span class="required"></span></td>
+                  <td>
+                    <select class="isDefault">
+                      <option hidden>false</option>
+                      <option value="1">是</option>
+                      <option value="0">否</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+          </form>
+          <button id="submit-btn" class="submit-btn">确认</button>
+      </div>
+    </div>
+  
+
+
+
+ <script>
+let address = [];
+let edit = false;
+let indexA = -1;
+
+const wrapper = document.querySelector('.address-form-wrapper');
+const cancelBtn = document.querySelector('.cancel-btn');
+const addBtn = document.querySelector('.add-address-btn');
+const list = document.querySelector('.list');
+const submitBtn = document.querySelector('.submit-btn');
+
+addBtn.addEventListener('click', () => {
+  wrapper.style.display = 'flex';
+});
+
+cancelBtn.addEventListener('click', () => {
+  wrapper.style.display = 'none';
+});
+
+submitBtn.addEventListener('click', () => {
+  const gender = document.querySelector('input[name="gender"]:checked').value;
+  const province = document.querySelector('.province').value;
+  const city = document.querySelector('.city').value;
+  const district = document.querySelector('.district').value;
+  const detailAddress = document.querySelector('input[class="detail-addresstext"]').value;
+  const name = document.querySelector('input[class="nametext"]').value;
+  const phone = document.querySelector('input[class="phonetext"]').value;
+  const isDefault = document.querySelector('.isDefault').value;
+
+  const ssd = `${province} ${city} ${district}`;
+
+  
+  if (edit) {
+    // 修改地址信息
+    const addressObj = address[indexA];
+
+    addressObj.name = name;
+    addressObj.gender = gender;
+    addressObj.phone = phone;
+    addressObj.ssd = ssd;
+    addressObj.detailAddress = detailAddress;
+    addressObj.isDefault = isDefault;
+  } else {
+    // 添加新的地址信息
+    const newAddress = {
+      name,
+      gender,
+      phone,
+      ssd,
+      detailAddress,
+      isDefault,
+    };
+
+    address.push(newAddress);
+  }
+
+  initAddress();
+  wrapper.style.display = 'none';
+
+  addBtn.addEventListener('click', function() {
+  wrapper.style.display = 'flex';
+  
+  //清空表单数据
+  document.querySelector('.province').selectedIndex = 0;
+  document.querySelector('.city').selectedIndex = '';
+  document.querySelector('.district').selectedIndex = '';
+  document.querySelector('input[class="detail-addresstext"]').value = '';
+  document.querySelector('input[class="nametext"]').value = '';
+  document.querySelector('input[name="gender"]:checked').checked = false;
+  document.querySelector('.phonetext').value = '';
+  document.querySelector('.isDefault').selectedIndex = 0;
+
+});
+
+  wrapper.style.display = 'none';
+});
+
+function initAddress() {
+  list.innerHTML = '';
+  
+  address.forEach((item, index) => {
+    const {
+      name,
+      gender,
+      phone,
+      ssd,
+      detailAddress,
+      isDefault
+    } = item;
+    const listItem = `
+      <div class="item">
+        <div class="top">
+          <div class="listItem">
+            <div class="label">收件人</div>
+            <div class="labelText">${name}${isDefault == '1' ? '<span class="default-tag">默认地址</span>' : ''}</div>          </div>
+          <div class="listItem">
+            <div class="label">性别</div>
+            <div class="labelText">${gender == 0 ? '女' : '男'}</div>
+          </div>
+          <div class="listItem">
+            <div class="label">手机号</div>
+            <div class="labelText">${phone}</div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="listItem">
+            <div class="label">居住地</div>
+            <div class="labelText">${ssd}</div>
+          </div>
+          <div class="listItem">
+            <div class="label">联系地址</div>
+            <div class="labelText">${detailAddress}</div>
+          </div>
+          <div class="listItem">
+            <div class="lable">编辑</div>
+             <div class="lableText"><button onclick="updata(${index})" class="updata">修改</button><button onclick="deleteT(${index})" class="delete">删除</button></div>
+
+          </div>
+        </div>
+      </div>
+    `;
+    list.innerHTML += listItem;
+  });
+}
+
+
+function updata(index) {
+  // 设置表单数据
+  const {
+    name,
+    gender,
+    phone,
+    ssd,
+    detailAddress,
+    isDefault,
+  } = address[index];
+
+  document.querySelector('input[class="nametext"]').value = name;
+  document.querySelector(`input[name="gender"][value="${gender}"]`).checked = true;
+  document.querySelector('.phonetext').value = phone;
+  const ssdArr = ssd.split(' ');
+  document.querySelector('.province').value = ssdArr[0];
+  document.querySelector('.city').value = ssdArr[1];
+  document.querySelector('.district').value = ssdArr[2];
+  document.querySelector('input[class="detail-addresstext"]').value = detailAddress;
+  document.querySelector('.isDefault').value = isDefault;
+
+  // 设置表单状态
+  edit = true;
+  indexA = index;
+  wrapper.style.display = 'flex';
+}
+
+function deleteT(index) {
+address.splice(index, 1);
+initAddress();
+}
+
+
+initAddress();
+ </script>
+
+</body>
+</html>
